@@ -1,0 +1,10 @@
+{
+  "name": "atlantisba",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static recreation of atlantisba.com",
+  "scripts": {
+    "start": "npx --yes serve public -l 5173",
+    "dev": "npx --yes serve public -l 5173"
+  }
+}
