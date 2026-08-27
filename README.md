@@ -1,11 +1,32 @@
 # Atlantis BA
 
-Static recreation of [atlantisba.com](https://atlantisba.com/) (content and assets sourced from a March 2025 Wayback Machine snapshot; the live site currently fails TLS handshake).
+Next.js app that serves the [atlantisba.com](https://atlantisba.com/) marketing site and hosts the email signature generator.
 
-## Run locally
+## URLs
+
+| Path | What |
+|------|------|
+| `/` | Marketing homepage (`content/landing.html`) |
+| `/blog.html` | Blog |
+| `/contacto.html` | Contact |
+| `/firmas` | Signature generator UI |
+| `/firmas/preview` | Signature preview |
+| `/api/generate` | PNG generation API |
+
+## Develop
 
 ```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:5173
+
+## Production
+
+```bash
+npm run build
 npm start
 ```
 
-Then open http://localhost:5173
+Deploy as a **Next.js** app on Vercel (not a static export). See `vercel.json`.
