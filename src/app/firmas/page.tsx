@@ -487,8 +487,18 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="mt-12 text-center text-blue-300 text-sm">
+        <div className="mt-12 text-center text-blue-300 text-sm space-y-2">
           <p>Atlantis 2025</p>
+          <button
+            type="button"
+            onClick={async () => {
+              await fetch("/api/firmas/auth", { method: "DELETE" });
+              window.location.href = "/firmas/login";
+            }}
+            className="text-blue-400 hover:text-blue-200 underline underline-offset-2"
+          >
+            Salir
+          </button>
         </div>
         </div>
       </main>
