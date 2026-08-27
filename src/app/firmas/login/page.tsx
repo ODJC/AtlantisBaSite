@@ -50,11 +50,8 @@ function LoginForm() {
             Atlantis BA
           </p>
           <h1 className="mt-2 text-2xl font-semibold text-white">
-            Acceso a Firmas
+            Generador de Firmas
           </h1>
-          <p className="mt-2 text-sm text-blue-200">
-            Ingresa la contraseña para usar el generador de firmas.
-          </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
